@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.border:hover {
+    border-top: 1px solid orange;
+    border-bottom: 3px solid orange;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-border:hover {
+    border: 2px solid #000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-border:hover {
+    border: 3px solid black;
+    border-radius: 50%;
+    transition: .05s;
+    color: #000;
+}
+
+.resume-border {
+    border: 5px groove white;
+    background-image: linear-gradient(to right, orange, black);
+}
+
+.resume-border:hover {
+    border: 5px groove black;
+    transition: .25s;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, black, red);
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(#dee2ff, #feeafa, #efd3d7, #cbc0d3, #8e9aaf);
+}
+
+nav {
+    display: flex;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 0px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.general ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+.general ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    transition: color 0.25s, background-color 0.25s;
+    padding: 10px;
+}
+
+.general ul li a:hover {
+    /* color: #e9072b; */
+    background-color: white;
+    color: rgb(3, 121, 154);
+}
+
+.contact-list ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+.contact-list ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.contact-list ul li a img {
+    height: 24px;
+    width: 24px;
+    background-size: cover;
+    transition: .25s;
+}
+
+/* .contact-list ul li a:hover { */
+    /* color: #e9072b; */
+    /* background-color: white; */
+    /* color: rgb(3, 121, 154); */
+/* } */
+
+.detail {
+    margin-left: 8%;
+    margin-top: 13%;
+}
+
+.detail h1 {
+    font-size: 50px;
+    color: #212121;
+    margin-bottom: 20px;
+}
+
+span {
+    color: red;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #000;
+    text-shadow: 3px 3px black;
+}
+
+.detail p {
+    color: #404040;
+    line-height: 22px;
+}
+
+.detail a {
+    background-color: #212121;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    margin: 30px 0px;
+    border-radius: 5px;
+}
+
+.images {
+    width: 45%;
+    height: 450px;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+.name {
+    height: 140px;
+    width: 160px;
+    position: absolute;
+    left: 70%;
+    bottom: 300px;
+    transform: translateX(-40%);
+    transition: bottom 1s, left 1s;
+}
+
+.boy {
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    left: 70%;
+    bottom: 0px;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+
+/* .images img {
+    height: 300px;
+    position: absolute;
+    left: 70%;
+    bottom: 10px;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+} */
+
+/* .images:hover .name {
+    bottom: 280px;
+} */
+
+.images:hover .name {
+    display: none;
+}
+
+.images:hover .boy {
+    left: 1%;
+}
+
+.logo {
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+}
+
+#preloader {
+    background: #000 url(loader.gif) no-repeat center center;
+    background-size: 15%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+@media (max-width:750px) {
+    .name {
+        height: 100px;
+        width: 100px;
+        bottom: 250px;
+    }
+
+    .boy {
+        height: 150px;
+        width: 150px;
+        bottom: 50px;
+        transition: bottom 1s, left 0.5s;
+    }
+
+    .images {
+        right: 25px;
+    }
+
+    span {
+        color: orange;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: #000;
+    }
+
+    .detail h1 {
+        font-size: 45px;
+        color: #212121;
+        margin-bottom: 5px;
+    }
+
+    nav {
+        width: 84%;
+    }
+
+    .detail a {
+        margin: 10px 0px;
+    }
+
+    .logo {
+        height: 75px;
+        width: 75px;
+    }
+
+    .logo-border:hover {
+        border: 1.75px solid black;
+    }
+
+    .general ul li a {
+        margin: 0px 0px;
+    }
+
+    .contact-list ul li a {
+        margin: 0px 0px;
+    }
+}

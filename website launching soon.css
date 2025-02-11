@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins';
+    box-sizing: border-box;
+    }
+
+    .container {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("/Website Launching Soon/Images/background\ soon.png");
+    background-position: center;
+    background-size: cover;
+    padding: 0 8%; /* what does it mean */
+    position:relative; /* what does it mean   */
+    }
+
+    /* .logo {
+    width: 120px;
+    padding: 20px 0;
+    cursor: pointer;
+    } */
+
+    .content {
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    color: white;
+    }
+
+    .content h1 {
+    font-size: 64px;
+    font-weight: 600;
+    }
+
+    .content h1 span {
+    color: #ff3753;
+    }
+
+    .content button {
+    background: black;
+    border: 2px solid white;
+    outline: none;
+    padding: 12px 25px;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    cursor: pointer;
+    }
+
+    .content button img {
+    width: 15px;
+    margin-left: 10px;
+    background: transparent;
+    }
+
+    .launch-time {
+    display: flex;
+    }
+
+    .launch-time div {
+    flex-basis: 100px; /* What is this? find out more about it. */
+    }
+
+    .launch-time div p {
+    font-size: 60px;
+    margin-bottom: -14px;
+    }
+
+    .rocket {
+    width: 250px;
+    position: absolute; /* What is this? find out more about it. */
+    right: 10%;
+    bottom: 0;
+    animation: rocket 4s linear infinite;
+    /* background: transparent; */
+    }
+
+    @keyframes rocket {
+    0% {
+        bottom: 0;
+        opacity: 0;
+        }
+    100% {
+        bottom: 105%;
+        opacity: 1;
+        }
+    }

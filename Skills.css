@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html , body {
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+
+}
+
+#preloader {
+    background: #000 url(/loader.gif) no-repeat center center;
+    background-size: 15%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+header {
+    background-image: linear-gradient(to right, black, white, black);
+    color: black;
+    padding: 10px 0;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    position: relative;
+    color: black;
+    /* background-color: gainsboro; */
+    background-image: linear-gradient(62deg, #C154C1 0%, #FFC0CB 100%);
+    height: 100%;
+    width: 500px;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-family: serif;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+}
+
+.container .skill-box {
+    width: 100%;
+    margin: 25px 0;
+}
+
+.skill-box .tittle {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    content: #333;
+}
+
+.skill-box .skill-bar {
+    height: 8px;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 30px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.skill-bar .skill-per {
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(62deg, #007FFF 0%, #03A9F4 100%);
+    animation: progress 0.4s ease-in-out forwards;
+    opacity: 0;
+    border-radius: 6px;
+}
+
+.skill-per.css {
+    width: 100%;
+    animation-delay: 0.1s;
+}
+
+.skill-per.js {
+    width: 65%;
+    animation-delay: 0.2s;
+}
+
+.skill-per.dom {
+    width: 90%;
+    animation-delay: 0.3s;
+}
+
+.skill-per.api {
+    width: 50%;
+    animation-delay: 0.4s;
+}
+
+.skill-per.python {
+    width: 40%;
+    animation-delay: 0.5s;
+}
+
+.skill-per.c {
+    width: 40%;
+    animation-delay: 0.6s;
+}
+
+.skill-per.cpp {
+    width: 10%;
+    animation-delay: 0.7s;
+}
+
+.skill-per.presentation {
+    width: 100%;
+    animation-delay: 0.8s;
+    background: linear-gradient(to right, #FF0033, #FF6666);
+}
+
+.skill-per.problem-solving {
+    width: 100%;
+    animation-delay: 0.9s;
+    background: linear-gradient(to right, #FF0033, #FF6666);
+}
+
+.skill-per.react {
+    width: 0%;
+    animation-delay: 1s;
+}
+
+.skill-per.node {
+    width: 0%;
+    animation-delay: 1.1s;
+}
+
+.skill-per.mongo {
+    width: 0%;
+    animation-delay: 1.2s;
+}
+
+.skill-per.express {
+    width: 0%;
+    animation-delay: 1.3s;
+}
+
+@keyframes progress {
+    0% {
+        width: 0;
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.skill-per.presentation .tooltip {
+    background: #000;
+    color: white;
+}
+
+.skill-per.presentation .tooltip::before {
+    background: #000;
+}
+
+.skill-per.problem-solving .tooltip {
+    background: #000;
+    color: white;
+}
+
+.skill-per.problem-solving .tooltip::before {
+    background: #000;
+}
+
+.skill-per .tooltip {
+    position: absolute;
+    right: -14px;
+    top: -28px;
+    font-size: 11px;
+    font-weight: 600;
+    color: black;
+    padding: 2px 6px;
+    border-radius: 6px;
+    background: white;
+    z-index: 1;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.tooltip::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    height: 10px;
+    width: 10px;
+    z-index: -1;
+    background: white;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+footer {
+    background-image: linear-gradient(to right, black, white, black);
+    padding: 1em 0;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: serif;
+}

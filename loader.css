@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 500px; /* Space between the two loaders */
+}
+
+.loader1 {
+    height: 100px;
+    width: 100px;
+    border-radius: 50% ;
+    border: 15px groove black;
+    border-top: 15px groove #00fff2;
+    border-bottom: 15px groove #ff52eb;
+    border-left: 15px groove #ff0000;
+    animation: spinAnimate 1s linear 0s infinite normal;
+}
+
+.loader2 {
+    height: 100px;
+    width: 100px;
+    border: 15px groove black;
+    border-top: 15px groove #00fff2;
+    border-bottom: 15px groove #ff52eb;
+    border-left: 15px groove #ff0000;
+    animation: spinAnimate 1s linear 0s infinite normal;
+}
+
+@keyframes spinAnimate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
